@@ -6,15 +6,18 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
+    color: white;
     
 }
 
 :root{
-    --cor1: #F291A3;
-    --cor2: #C4F2EE;
-    --cor3: #728C8A;
+    --cor1: #0d47a1;
+    --cor2: #2c2c2c;
+    --cor3: #2c2c2c;
     --cor4: #172A7F;
-    --cor5: #ffb74b;
+    --cor5: #6e6e6e;
+    --cor6: #070c24;
+     
 }
 
 body{
@@ -24,9 +27,10 @@ body{
 }
 
 header{
-    background-color: var(--cor5);
+    background-color: var(--cor6);
     padding: 0px;
-    margin: 0px;
+    margin: -30px;
+    padding-top: 10px;
 }
 
 header img{
@@ -38,38 +42,39 @@ header img{
 nav{
     text-align: left;
     padding: 2px;
-    background-color: var(--cor5);
+    background-color: var(--cor6);
     text-indent: 2em;
-    margin: 0px 0px;
+    margin: 0.8px 0px white;
     
 }
 
 nav > a{
     margin-right: 60px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 1.2em;
     text-align: center;
+    margin-top: 0.8px white;
     
 
 }
 
 nav > a:hover{
     text-decoration: underline;
-    background-color: #fffb00;
+    background-image: linear-gradient(to right,transparent, var(--cor1), transparent);
     border-radius: 5px;
     padding: 2px 15px;
     transition-duration: 0.6s;
+    
 }
 
 main{
     
     margin: auto;
-    padding: 5px 72px;
-    background-color: white;
+    padding: 15px 40px;
+    background-color: var(--cor3)
     max-width: 100%;
     min-width: 320px;
-    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.534);
     border-radius: 4px;
     
 
@@ -77,16 +82,15 @@ main{
 }
 
 main h1{
-    font-size: 2.0em;
-    background-image: linear-gradient(to right, transparent, var(--cor1),transparent);
-    text-align: center;
+    font-size: 2.0em;   
+    text-align: left;
 }
 
 main h2{
     margin: 5px;
     padding: 5px;
     background-image: linear-gradient(to right,transparent, var(--cor1), transparent);
-    text-align: center;
+    text-align: left;
 }
 
 main p{
@@ -96,16 +100,25 @@ main p{
     
 }
 
-main img{
+.magnavox {
     display: block;
+    max-width: 400px;
     margin: auto;
-    width: 50%;
-    height: 40%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.spacewar {
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .lista-consoles{
     list-style-position: inside;
-    background-color: aliceblue;
+    background-color: rgb(0, 0, 0);
     border-radius: 5px;
     padding: 8px;
     
@@ -121,7 +134,7 @@ a:hover{
 
 .lista-portateis{
     list-style-position: inside;
-    background-color: aliceblue;
+    background-color: rgb(0, 0, 0);
     border-radius: 5px;
     padding: 8px;
     
